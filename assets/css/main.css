@@ -7,20 +7,20 @@ title {
 h2 {
     width: 100%;
     text-align:center;
+    font-family: "Quattrocento+Sans";
 }
-
-.metac {
+h1 {
+    width: 100%;
+    text-align:center;
+    font-family: "Quattrocento+Sans";
+}
+body .metac {
     position: fixed;
     z-index: 1;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
     background-color: rgb(45, 135, 94);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
   }
 
 
@@ -35,7 +35,7 @@ h2 {
   color: #24292E;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Quattrocento+Sans";
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
