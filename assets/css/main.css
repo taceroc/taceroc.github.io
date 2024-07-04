@@ -19,7 +19,10 @@ h1 {
     font-family: "Quattrocento Sans", sans-serif;
 }
 
-
+.center {
+    text-align: center;
+  }
+  
 section .metac {
     position: fixed;
     z-index: 1;
