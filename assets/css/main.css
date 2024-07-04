@@ -20,7 +20,7 @@ h1 {
 }
 
 
-body .metac {
+section .metac {
     position: fixed;
     z-index: 1;
     top: 0;
