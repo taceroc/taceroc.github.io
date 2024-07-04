@@ -1,18 +1,22 @@
 /* <button class="button-4" role="button">Button 4</button> */
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* CSS */
+.quattrocento-sans-regular {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 title {
     display: none;
   }
 h2 {
     width: 100%;
     text-align:center;
-    font-family: "Quattrocento+Sans";
+    font-family: "Quattrocento Sans", sans-serif;
 }
 h1 {
     width: 100%;
     text-align:center;
-    font-family: "Quattrocento+Sans";
+    font-family: "Quattrocento Sans", sans-serif;
 }
 body .metac {
     position: fixed;
@@ -24,7 +28,7 @@ body .metac {
   }
 
 
-.btn {
+a .btn {
   appearance: none;
   text-align: center;  
   background-color: #FAFBFC;
@@ -35,7 +39,7 @@ body .metac {
   color: #24292E;
   cursor: pointer;
   display: inline-block;
-  font-family: "Quattrocento+Sans";
+  font-family: "Quattrocento Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
