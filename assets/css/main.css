@@ -1,6 +1,13 @@
 /* <button class="button-4" role="button">Button 4</button> */
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* CSS */
+title {
+    display: none;
+  }
+h2 {
+    width: 100%;
+    text-align:center;
+}
 .btn {
   appearance: none;
   background-color: #FAFBFC;
