@@ -3,5 +3,8 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 
-title: [Tatiana Acero Cuellar]
-description: [Ph.D student at the Department of Physics and Astronomy, University of Delaware]
+title: Tatiana Acero Cuellar
+description: Personal website for Tatiana
+email: taceroc@udele.edu
+github_username: taceroc
+
