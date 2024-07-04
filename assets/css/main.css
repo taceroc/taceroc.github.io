@@ -8,8 +8,25 @@ h2 {
     width: 100%;
     text-align:center;
 }
+
+.metac {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(45, 135, 94);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+
 .btn {
   appearance: none;
+  text-align: center;  
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
@@ -32,7 +49,6 @@ h2 {
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: break-word;
-  text-align: center;  
 }
 
 .button-4:hover {
