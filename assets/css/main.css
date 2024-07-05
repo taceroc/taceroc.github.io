@@ -24,7 +24,7 @@ h2 {
     text-align: center;
   }
 
-section .metac {
+.metac {
     position: fixed;
     background-color: rgb(45, 135, 94);
   }
