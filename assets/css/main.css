@@ -5,6 +5,14 @@
     font-weight: 400;
     font-style: normal;
   }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
 title {
     display: none;
   }
@@ -72,6 +80,8 @@ h2 {
 }
 
 
+
+
 a.btn {
   appearance: none;
   background-color: #FAFBFC;
@@ -98,33 +108,33 @@ a.btn {
   word-wrap: break-word;
 }
 
-.button-4:hover {
+a.btn:hover {
   background-color: #F3F4F6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
-.button-4:disabled {
+a.btn:disabled {
   background-color: #FAFBFC;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959DA5;
   cursor: default;
 }
 
-.button-4:active {
+a.btn:active {
   background-color: #EDEFF2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
 
-.button-4:focus {
+a.btn:focus {
   outline: 1px transparent;
 }
 
-.button-4:before {
+a.btn:before {
   display: none;
 }
 
-.button-4:-webkit-details-marker {
+a.btn:-webkit-details-marker {
   display: none;
 }
