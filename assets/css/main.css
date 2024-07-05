@@ -31,6 +31,29 @@ h2 {
     display: flex;
   }
 
+.left-banner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(45, 135, 94); /* Background color */
+    padding: 20px;
+    width: 300px;
+    height: 100vh; /* Full height */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.left-banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.left-banner h1 {
+  width: 100%;
+  text-align:center;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
 
 a.btn {
   appearance: none;
