@@ -16,8 +16,9 @@ body, html {
 title {
     display: none;
   }
-h4 {
+.left-banner h4 {
     width: 100%;
+    margin: 5px 0 0;
     font-size: 1.0em;
     text-align:center;
     font-family: "Quattrocento Sans", sans-serif;
@@ -66,8 +67,17 @@ h2 {
 
 
 .left-banner h1 {
+  margin: 0;
   width: 100%;
   font-size: 2.5em;
+  text-align:center;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.left-banner h4 {
+  width: 100%;
+  margin: 5px 0 0;
+  font-size: 1.0em;
   text-align:center;
   font-family: "Quattrocento Sans", sans-serif;
 }
