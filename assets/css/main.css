@@ -34,11 +34,13 @@ h2 {
 .left-banner {
     display: flex;
     align-items: center;
-    background-color: rgb(45, 135, 94); /* Background color */
+    background-color: rgb(131, 216, 227); /* Background color */
     padding: 20px;
     width: 300px;
     height: 100vh; /* Full height */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .left-banner .banner-content {
   display: flex;
@@ -52,6 +54,21 @@ h2 {
   width: 100%;
   text-align:center;
   font-family: "Quattrocento Sans", sans-serif;
+}
+
+
+.right-banner {
+  background-color: rgb(227, 201, 211); /* Background color */
+  margin-left: 320px; /* Space for the fixed left banner */
+  padding: 20px;
+  width: calc(100% - 320px); 
+}
+
+.right-banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 
