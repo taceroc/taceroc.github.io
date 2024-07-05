@@ -64,6 +64,12 @@ h2 {
   font-family: "Quattrocento Sans", sans-serif;
 }
 
+.left-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image round */
+}
+
 
 .right-banner {
   background-color: rgb(227, 201, 211); /* Background color */
