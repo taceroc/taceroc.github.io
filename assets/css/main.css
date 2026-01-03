@@ -44,7 +44,7 @@ h2 {
   }
 
 .metac {
-    background-color: rgb(45, 135, 94);
+    background-color: rgba(45, 135, 94, 0.527);
     width: 100%;
     height: 100vh; /* Full height */
     display: flex;
@@ -53,13 +53,16 @@ h2 {
 .left-banner {
     display: flex;
     align-items: center;
-    background-color: rgb(131, 216, 227); /* Background color */
+    background-color: rgba(131, 216, 227, 0.527); /* Background color */
     padding: 20px;
     width: 400px;
     height: 100vh; /* Full height */
     position: fixed;
     top: 0;
     left: 0;
+    overflow: auto; 
+
+    
 }
 .left-banner .banner-content {
   display: flex;
@@ -105,12 +108,21 @@ h2 {
 
 
 .right-banner {
-  background-color: rgb(227, 201, 211); /* Background color */
+  /* background-color: rgb(227, 201, 211); Background color */
+  background-color: rgba(227, 201, 211, 0.37);
   margin-left: 440px; 
   height:fit-content;
  
   display :block
 }
+
+/* .right-banner {
+  background-color: rgb(255, 255, 255); /* Background color */
+  /* margin-left: 440px; 
+  height:fit-content;
+ 
+  display :block
+} */ 
 
 .right-banner .banner-content {
   display: flex;
@@ -142,15 +154,30 @@ h2 {
   font-size: 1.8em;
   text-align: left;
   /* width: 40%; */
-
 }
 
+div.four-rounded-corners {
+  /* using the shorthand property to set the border radius on all corners */
+  border-radius: 100px;
+  background: rgb(255, 255, 255);
+  padding: 10px 100px 10px 100px; 
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* text-align: center; */
+  font-size: 32px;
+}
 
 .right-banner .top-banner {
   /* width: 100%; */
-  height: 100px;
-  background-color: rgb(193, 180, 185);
+  height: 300px;
+  /* background-color: rgb(193, 180, 185); */
   /* margin-bottom: 20px; */
+  background-image: url("../imgs/PXL_20250106_114920461.MP.jpg");
+  /* background-size: cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
    
 
 }
@@ -250,19 +277,28 @@ a.btn:-webkit-details-marker {
     border-bottom: 1px solid  rgb(87, 143, 150);
     border-top: 1px solid  rgb(74, 91, 93);
     height: 5px;
-   background-color: rgb(227, 201, 211);
+   background-color: rgb(227, 201, 211, 0.37);
 }
+
+/* .banner-content .seven h1:after,.banner-content .seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid  rgb(87, 143, 150);
+    border-top: 1px solid  rgb(74, 91, 93);
+    height: 5px;
+   background-color: rgb(255, 255, 255);
+} */
 
 
 .banner-content .seven h2 {
   width: 100%;
-  font-size: 3.4em;
+  font-size: 60px;
   text-align: left;
   margin-left: 30px;
   font-weight: bold;
-  font-style: italic; 
+
   font-family: "Quattrocento Sans", sans-serif;
-  color:#3e3e3e;
+  color:#6e6e6e;
 }
 
 .center {
@@ -286,6 +322,7 @@ a.btn:-webkit-details-marker {
     float: left;
     /* border: 2px solid red; */
     overflow-wrap: break-word;
+    margin-bottom: 30px;
 }   
 
 .float-child_left {
