@@ -92,21 +92,41 @@
                     height: auto !important;
                 }
 
-                .left-banner img {
-                    width: 100%;
+                .left-banner > .banner-content > img {
+                    width: 100% !important;
                     object-fit: contain;
                 }
 
                 .button-container {
                     display: flex !important;
                     flex-wrap: wrap !important;
+                    justify-content: center !important;
+                    align-items: center !important;
                     gap: .6rem !important;
                     width: 100% !important;
+                    text-align: center !important;
                 }
 
                 .button-container .btn {
                     flex: 0 1 auto;
                     max-width: 100%;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    text-align: center !important;
+                    display: inline-flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+
+                .button-container .btn img {
+                    width: 18px !important;
+                    height: 18px !important;
+                    max-width: 18px !important;
+                    object-fit: contain !important;
+                    display: inline-block !important;
+                    flex: 0 0 18px !important;
+                    margin: 0 .4rem 0 0 !important;
+                    vertical-align: middle !important;
                 }
 
                 .float-container {
@@ -179,12 +199,15 @@
 
                 .button-container {
                     flex-direction: column !important;
-                    align-items: stretch !important;
+                    align-items: center !important;
+                    justify-content: center !important;
                 }
 
                 .button-container .btn {
-                    width: 100% !important;
-                    text-align: center;
+                    width: min(100%, 18rem) !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    text-align: center !important;
                 }
 
                 iframe {
