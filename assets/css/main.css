@@ -326,9 +326,34 @@ a.btn:-webkit-details-marker {
 }   
 
 .float-child_left {
-    width: 400px;
+    width: 80%;
     float: left;
-    margin-left: 150px;
+    margin-left: 1px;
+    margin-right: 1px;
     /* border: 2px solid red; */
     overflow-wrap: break-word;
-}   
+}  
+
+
+
+
+.figure-container {
+      display: flex;
+      gap: 20px;            /* Adds spacing between the figures */
+      justify-content: center; /* Centers the group on the page */
+}
+
+/* Styling for each individual figure block */
+.figure-container figure {
+  margin: 0;            /* Resets default browser margins */
+  max-width: 40%;       /* Ensures two figures fit comfortably side-by-side */
+  text-align: center;   /* Centers the caption under the image */
+}
+
+/* Ensures images scale responsively inside their containers */
+.figure-container img {
+  width: 100%;
+  height: auto;
+  display: block;       /* Eliminates unwanted bottom white spaces */
+  border-radius: 4px;   /* Optional visual touch */
+} 

@@ -44,7 +44,25 @@
             </div>
 
             </div>
-          
+            <div class="banner-content">
+            <div class="banner-content">
+                <h3>Jump to section:</h3>
+                <a href="#about-section" style="color: black;"><h2>Hi there!</h2></a>
+                <a href="#astro-section" style="color: black;"><h2>Astrophysics</h2></a>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li><a href="#astro-section-DL" style="color: gray;"><h3>Deep Learning Models for Real-Bogus</h3></a></li>
+                  <li><a href="#astro-section-int" style="color: gray;"><h3>Model interpretability</h3></a></li>
+                  <li ><a href="#astro-section-LE" style="color: gray;"><h3>Light Echo simulation</h3></a></li>
+                </ul>  
+            </div>
+
+               <div class="banner-content">
+                <a href="#geo-section" style="color: black;"><h2>Geospatial Science</h2></a>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li><a href="#geo-section-fp" style="color: grey;"><h3>Deep Learning Segmentation for Fish ponds in Nigeria</h3></a></li>
+                </ul>  
+            </div>
+             </div>
         </div>
     </section>
 
@@ -53,7 +71,7 @@
         <div class="top-banner"> </div>
         <div class="banner-content">
             <div class="seven">
-                    <h2>Hi there!</h2>
+                    <h2 id=about-section>Hi there!</h2>
                     <div class="banner-description">
                     <div >
                     <p> 
@@ -62,7 +80,7 @@
                     <p> 
                         I use machine learning to extract meaning from images; whether the instruments are pointing towards the Earth or outside, I'm there. 
                         I have direct experience on the Vera C. Rubin Observatory Alert Production commissioning team. I developed and implemented the Real-Bogus deep learning model for Rubin, assigning a reliability score to detected sources 
-                        to distinguish astrophysical transients from artifacts.  I led the Rubin Difference Detectives, a citizen science project on the Zooniverse platform. My research in astrophysics includes work on the development of novel 
+                        to distinguish astrophysical transients from artifacts.  I led the Rubin Difference Detectives, a citizen science project on the Zooniverse platform. My research in astrophysics includes developing novel 
                         methods for transient discovery and physics-driven simulations of light echoes in astrophysical images. Outside of astrophysics, I have led work on the automatic detection of fish ponds in Nigeria using satellite imagery.
 
                         I hold a B.Sc in Physics from the Universidad Nacional de Colombia (National University of Colombia). 
@@ -76,37 +94,46 @@
             </div>
             <div class="seven">
                 <h1>Research</h1>
-                    <h2>Astrophysics</h2>
+                    <h2 id="astro-section">Astrophysics</h2>
             </div>
             <div class="banner-description">
                 <div class="four-rounded-corners">
-                <h3>Deep Learning Models</h3>
+                <h3 id="astro-section-DL">Deep Learning Models for Real-Bogus</h3>
                 <div class=center><img src="assets/imgs/cnn_arch.png"  width="100%" alt="cnn"></div>
-                    <p>I'm developing the Real-Bogus (a.k.a. the reliability) model for the Vera C. Rubin Observatory. I have already delivered three versions of the model, which are reported in the technical note [DMTN-337](https://dmtn-337.lsst.io/)(and a paper is coming up soon!).
-                        A version of the model was deployed to assign the reliability score for all detections in the ![Data Preview 1](https://dp1.lsst.io/) data and ![Data Preview 2 data](https://dp2.lsst.io/). The last and current version of the models is being deployed for 
+                    <p>I'm developing the Real-Bogus (a.k.a. the reliability) model for the Vera C. Rubin Observatory. I have already delivered three versions of the model, which are reported in the technical note <a href="https://dmtn-337.lsst.io/">DMTN-337</a> (and a paper is coming up soon!).
+                        A version of the model was deployed to assign the reliability score for all detections in the <a href="https://dp1.lsst.io/">Data Preview 1</a>  and <a href="https://dp2.lsst.io/">Data Preview 2</a>. The last and current version of the models is being deployed for 
                         the generation of the LSST-alert data.
+                        </p>
+                        <p>
                         The machine learning reliability model for Rubin is a light Convolutional Neural Network (CNN) that assigns each detected source a reliability score in [0,1], where 1 indicates a real astrophysical source, and 0 indicates an artifact.
                         </p>
                 <p>
-                    Before joining Rubin, I developed a Real-Bogus model using autoscan dataset (from the Dark Energy Survey), where I compared the performance of the classifier when training with the template, science, and difference image, and only with the template and the science. 
-                    <div class="button-container">
-                       <a href="https://doi.org/10.3847/1538-3881/ace9d8" class="btn">See paper here</a>
-                    </div>
+                    Before joining Rubin, I developed a Real-Bogus model using autoscan dataset (from the Dark Energy Survey), where I compared the performance of the classifier when training with the template, science, and difference image, and only with the template and the science. See paper here: <a href="https://doi.org/10.3847/1538-3881/ace9d8">Acero-Cuellar et al. 2023</a>
+                    
+                       
+            
                     
                 </p>
                 </div>
                 <div class="four-rounded-corners">
-                <h3>Model interpretability</h3>
+                <h3 id="astro-section-int">Model interpretability</h3>
                 <div style="align-items: center;"> 
+                    <p><i>(Hover over the points)</i> </p>
                     <div> <iframe src="assets/imgs/label_autoscan_test.html" width="1100" height="600" frameborder="0" ></iframe></div>
                         <p>Distinguising between real and bogus astrophysical objects can be more challenging than just a binary classification. I created an informative latent space of autoscan dataset using a contrastive learning technique 
                             called Bootstrap Your Own Latent (BYOL). The plot
                             is generated by reducing that latent space to a 2D space with UMAP. Similar things are closer in this space. 
                        </p>
+
+                       <div class=center><img src="assets/imgs/saliency.png"  width="110%" alt="cnn"></div>
+                       <p>In <a href="https://doi.org/10.3847/1538-3881/ace9d8">Acero-Cuellar et al. 2023</a> I explored the saliency maps of both, the model trained using the template, science, and difference image, and the one only with the template and the science. We found that the most important pixels for the model with the triplet are usually in the difference image, and the one with only two images are in template image.
+                       </p>
+
+
                 </div>
                 </div>
                 <div class="four-rounded-corners">
-                <h3>Light Echoes Simulation</h3>
+                <h3 id="astro-section-LE">Light Echoes Simulation</h3>
                 <div class="float-container">
                 <div class="float-child">
                     <img src="assets/imgs/examples_all.png" alt="le" width="100%" class="center">
@@ -114,7 +141,13 @@
                 <div class="float-child">
                     <p>Feed-Forward simulation of Light Echoes. I am generating a
                         simulated data set of Light Echoes images using the physics principles behind their formation, and observed properties
-                        of the dust medium. Light Echoes are detected on difference images; I am using the LSST Science Pipelines to inject the Light Echo simulations and perform Difference Image Analysis. </p>
+                        of the dust medium. Light Echoes are detected on difference images; I am using the LSST Science Pipelines to inject the Light Echo simulations and perform Difference Image Analysis. 
+                    </p>
+                    <p>
+                        You can use the pipeline to simulate the raw LE image in <a href="https://github.com/taceroc/LEIMG">github.com/taceroc/LEIMG</a>.</p>
+                        <p>
+                        and the pipeline to inject those raw LE images into DP1 images <a href="hhttps://github.com/taceroc/LE_inj_dp1g">github.com/taceroc/LE_inj_dp1</a>.
+                        </p>
                 </div>
                 </div>
                 
@@ -123,18 +156,34 @@
         
 
             <div class="seven">
-                    <h2>Remote Sensing</h2>
+                    <h2 id="geo-section">Geospatial Science</h2>
             </div>
 
             <div class="banner-description">
-                <div class="four-rounded-corners">
-                <h3>Deep Learning Segmentation for Fish ponds in Nigeria</h3>
-                <img src="assets/imgs/training_yolov7.png" alt="le" width="60%" class="left">
-                    <img src="assets/imgs/mag_nigeria_aug19.png" alt="le" width="60%" class="right">
+                <div class="four-rounded-corners">  
+                <h3 id="geo-section-fp">Deep Learning Segmentation for Fish ponds in Nigeria</h3>
+
+                <div class="figure-container">
+    
+                    <figure>
+                      <img src="assets/imgs/training_yolov7.png" alt="yolo">
+                    </figure>
+
+                    <figure>
+                      <img src="assets/imgs/map_nigeria_aug19.png" alt="mapnig">
+                    </figure>
+
+                </div>
+
+
                 <p>I created a fish pond dataset for Nigeria using a pipeline I developed and implemented as a multistage deep-learning+random forest approach. I trained, validated, and deployed a 
                     YOLO segmentation model, a state-of-the-art model for computer vision segmentation tasks. I managed data collection, annotation, and curation of the RGB Google-Satellite imagery and Sentinel-2 data.  
-                    A description of the dataset and the pipeline is reported in Acero-Cuellar et al. 2026, accepted for publication in the Scientific Data journal. 
-                    The dataset is already publicly available at https://zenodo.org/records/17915003, and a preprint is available at https://doi.org/10.21203/rs.3.rs-8613311/v1.
+                    </p>
+                    <p>
+                    A description of the dataset and the pipeline is reported in Acero-Cuellar et al. 2026, accepted for publication in Scientific Data. 
+                    </p>
+                    <p>
+                    The dataset is already publicly available at <a href="https://zenodo.org/records/17915003">Zenodo</a>  and a preprint is available at <a href="https://doi.org/10.21203/rs.3.rs-8613311/v1">Pre-print</a>.
 </p>
                 </div>
             </div>
