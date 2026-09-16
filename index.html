@@ -19,6 +19,24 @@
             /* Mobile layout overrides. These intentionally come after main.css so
                fixed desktop sidebar rules cannot clip the page on small screens. */
             @media screen and (max-width: 900px) {
+                /* Keep every mobile box inside the viewport, including padded cards. */
+                *, *::before, *::after {
+                    box-sizing: border-box !important;
+                }
+
+                html, body {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    min-width: 0 !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+
+                body {
+                    overflow-x: hidden !important;
+                    overflow-y: auto !important;
+                }
+
                 html, body {
                     width: 100%;
                     min-width: 0;
@@ -53,7 +71,8 @@
                     top: auto !important;
                     bottom: auto !important;
                     transform: none !important;
-                    overflow: visible !important;
+                    overflow-x: hidden !important;
+                    overflow-y: visible !important;
                 }
 
                 .left-banner {
@@ -79,6 +98,16 @@
                     max-width: 100% !important;
                     margin-left: 0 !important;
                     margin-right: 0 !important;
+                }
+
+                .four-rounded-corners {
+                    box-sizing: border-box !important;
+                    max-width: 100% !important;
+                    overflow-x: hidden !important;
+                }
+
+                .right-banner .banner-content {
+                    overflow-x: hidden !important;
                 }
 
                 .left-banner .banner-content {
